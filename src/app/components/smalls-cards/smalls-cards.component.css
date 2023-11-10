@@ -23,3 +23,8 @@
   gap: 1rem;
   justify-content: flex-start;
 }
+
+.content-small-cards > p {
+  color: gray;
+  font-size: 0.8rem;
+}

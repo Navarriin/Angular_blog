@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-smalls-cards',
   templateUrl: './smalls-cards.component.html',
-  styleUrls: ['./smalls-cards.component.css']
+  styleUrls: ['./smalls-cards.component.css'],
 })
 export class SmallsCardsComponent {
-
+  @Input()
+  photoCover: string = '';
+  @Input()
+  titleSmallCard: string = '';
+  @Input()
+  contentSmallCard: string = '';
+  constructor() {}
 }
