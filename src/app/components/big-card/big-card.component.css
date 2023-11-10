@@ -1,13 +1,12 @@
 .big-card {
-  border: 1px solid white;
   margin: 1rem;
   padding: 1rem;
-  width: 850px;
+  width: 800px;
 }
 
 .big-card > img {
   width: 95%;
-  height: 500px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
