@@ -1,0 +1,9 @@
+.page-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-cards {
+  display: flex;
+  flex-direction: row;
+}
