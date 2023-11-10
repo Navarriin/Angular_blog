@@ -1,0 +1,21 @@
+header {
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8rem;
+}
+
+.menu-list > ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu-list > ul > li {
+  list-style: none;
+}
+
+.menu-list > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
