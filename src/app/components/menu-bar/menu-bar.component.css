@@ -1,9 +1,11 @@
-header {
-  border: 1px solid white;
+.header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 8rem;
+  background-color: rgb(11, 11, 11);
+  height: 60px;
+  box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
 }
 
 .menu-list > ul {

@@ -1,12 +1,8 @@
-.page-home {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-cards {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-top: 2.6rem;
 }
 
 .smalls-cards {
