@@ -8,12 +8,19 @@
   align-items: center;
   padding-bottom: 1.6rem;
   margin-top: 0.3rem;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
+
+.smalls-cards:hover {
+  transform: scale(1.01);
 }
 
 .smalls-cards > div > img {
   width: 280px;
   height: 160px;
   margin-right: 1rem;
+  border-radius: 4px;
 }
 
 .content-small-cards {
