@@ -1,9 +1,13 @@
 <div class="smalls-cards">
     <div>
-        <img src="{{ photoCover }}" alt="">
+        <a [routerLink]="['content']">
+            <img src="{{ photoCover }}" alt="">
+        </a>
     </div>
     <div class="content-small-cards">
-        <h1>{{ titleSmallCard }}</h1>
-        <p>{{ contentSmallCard }}</p>
+        <a [routerLink]="['content']">
+            <h1>{{ titleSmallCard }}</h1>
+            <p>{{ contentSmallCard }}</p>
+        </a>
     </div>
 </div>
