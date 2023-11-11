@@ -27,3 +27,22 @@
   width: 60%;
   color: gray;
 }
+
+.button {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.button > a > button {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: inherit;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  color: white;
+}
