@@ -9,6 +9,7 @@ import { MenuTitleComponent } from './components/menu-title/menu-title.component
 import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallsCardsComponent } from './components/smalls-cards/smalls-cards.component';
 import { ContentComponent } from './pages/content/content.component';
+import { PrimaryContentComponent } from './components/primary-content/primary-content.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContentComponent } from './pages/content/content.component';
     MenuTitleComponent,
     BigCardComponent,
     SmallsCardsComponent,
-    ContentComponent
+    ContentComponent,
+    PrimaryContentComponent
   ],
   imports: [
     BrowserModule,
