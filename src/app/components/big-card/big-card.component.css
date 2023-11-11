@@ -8,7 +8,11 @@
   transform: scale(1.01);
 }
 
-.big-card > img {
+.big-card > a {
+  text-decoration: none;
+}
+
+.big-card > a > img {
   width: 95%;
   height: 350px;
   display: flex;
@@ -17,13 +21,14 @@
   border-radius: 4px;
 }
 
-.big-card > h1 {
+.big-card > a > h1 {
   width: 95%;
   margin-top: 0.6rem;
   font-size: 1.6rem;
+  color: white;
 }
 
-.big-card > p {
+.big-card > a > p {
   margin-top: 0.6rem;
   width: 95%;
   color: gray;
