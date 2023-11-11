@@ -29,8 +29,7 @@ export const dataFake = [
     id: '4',
     photo:
       'https://d281e75zdqqlon.cloudfront.net/media/wp-content/uploads/2023/11/Harvard-curso-capa.jpg',
-    title:
-      'Harvard tem curso gratuito de Ciência da Computação em português; Como conseguir',
+    title: 'Harvard tem curso gratuito de Ciência da Computação em português',
     description:
       'O curso de Ciência da Computação em Harvard é de graça, com tradução para o português.Já imaginou fazer o curso de Ciência da Computação em Harvard, em português e sem gastar um centavo? Sim, você leu certo! Veja abaixo como conseguir.O curso é oferecido pelo projeto Na Prática, que busca proporcionar educação e desenvolvimento de habilidades para jovens e profissionais em diversas áreas. A versão online é traduzida pela Fundação Estudar.',
   },

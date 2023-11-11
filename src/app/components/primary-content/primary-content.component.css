@@ -21,6 +21,7 @@
   font-size: 2rem;
   width: 60%;
   border-bottom: 0.4px solid gray;
+  padding-bottom: 0.8rem;
 }
 
 .primary > p {
