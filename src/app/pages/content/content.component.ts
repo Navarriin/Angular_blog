@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-content',
@@ -7,9 +6,5 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./content.component.css'],
 })
 export class ContentComponent {
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit(): void {
-    this.route.paramMap.subscribe((value) => console.log(value.get('id')));
-  }
+  constructor() {}
 }
