@@ -8,13 +8,9 @@ import { dataFake } from '../../data/dataFake';
   styleUrls: ['./primary-content.component.css'],
 })
 export class PrimaryContentComponent {
-  @Input()
-  contentImg: string = '';
-  @Input()
-  contentTitle: string = '';
-  @Input()
-  content: string = '';
-
+  protected contentImg: string = '';
+  protected contentTitle: string = '';
+  protected content: string = '';
   private id: string | null = '0';
 
   constructor(private route: ActivatedRoute) {}

@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-big-card',
@@ -6,13 +8,23 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./big-card.component.css'],
 })
 export class BigCardComponent {
-  @Input()
-  id: string = '0';
-  @Input()
-  photoCover: string = '';
-  @Input()
-  cardTitle: string = '';
-  @Input()
-  cardDescription: string = '';
-  constructor() {}
+  public id: string | null = '0';
+  protected photoCover: string = '';
+  protected cardTitle: string = '';
+  protected cardDescription: string = '';
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => this.id === value.get('id'));
+    this.setValuesToComponent(this.id);
+  }
+
+  setValuesToComponent(id: string | null) {
+    const result = dataFake.filter((article) => article)[0];
+    this.id = result.id;
+    this.photoCover = result.photo;
+    this.cardTitle = result.title;
+    this.cardDescription = result.description;
+  }
 }
