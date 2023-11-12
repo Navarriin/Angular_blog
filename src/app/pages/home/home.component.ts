@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  ids: number[] = [2, 3, 4];
+  ids: string[] = ['2', '3', '4'];
   constructor() {}
 }
