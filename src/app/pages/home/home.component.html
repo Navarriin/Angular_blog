@@ -5,8 +5,8 @@
         <app-big-card></app-big-card>
     </div>
     <div class="smalls-cards">
-        <app-smalls-cards id="2"></app-smalls-cards>
-        <app-smalls-cards id="3"></app-smalls-cards>
-        <app-smalls-cards id="4"></app-smalls-cards>
+        <li *ngFor="let id of ids">
+            <app-smalls-cards id="{{ id }}"></app-smalls-cards>
+        </li>
     </div>
 </div>
