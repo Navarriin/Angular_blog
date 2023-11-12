@@ -20,7 +20,7 @@ export class BigCardComponent {
     this.setValuesToComponent(this.id);
   }
 
-  setValuesToComponent(id: string | null) {
+  setValuesToComponent(id: string | null): void {
     const result = dataFake.filter((article) => article)[0];
     this.id = result.id;
     this.photoCover = result.photo;

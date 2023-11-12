@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-smalls-cards',
@@ -7,12 +9,22 @@ import { Component, Input } from '@angular/core';
 })
 export class SmallsCardsComponent {
   @Input()
-  id: string = '0';
-  @Input()
-  photoCover: string = '';
-  @Input()
-  titleSmallCard: string = '';
-  @Input()
-  contentSmallCard: string = '';
-  constructor() {}
+  id: string | null = '0';
+  protected photoCover: string = '';
+  protected titleSmallCard: string = '';
+  protected contentSmallCard: string = '';
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => this.id === value.get('id'));
+    this.setValuesToComponent(this.id);
+  }
+
+  setValuesToComponent(id: string | null): void {
+    const result = dataFake.filter((value) => value.id === id)[0];
+    this.photoCover = result.photo;
+    this.titleSmallCard = result.title;
+    this.contentSmallCard = result.description;
+  }
 }
